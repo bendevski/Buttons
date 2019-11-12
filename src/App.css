@@ -1,22 +1,50 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.Elems{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  align-items: inherit;
+  max-width: 400px;
+}
+.Box{
+  align-self: center;
+  background-color: gray;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 40px;
+}
+.Buttons{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  
+}
+.Button{
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border: none;
+  background-color: rgb(255, 255, 255); /* Green */
+  color: black;
+}
+#transitioning{
+  transition-duration: 0.4s;
+  background-color: rgb(255, 255, 255); /* Green */
+  color: black;
+}
+#clicked{
+  background-color: rgb(56, 149, 59); /* Green */
   color: white;
 }
 
-.App-link {
-  color: #09d3ac;
+.Button:hover {
+  transition-duration: 0.4s;
+  background-color: rgb(56, 149, 59); /* Green */
+  color: white;
+}
+#transitioning:hover{
+  transition-duration: 0.4s;
+  background-color: rgb(56, 149, 59); /* Green */
+  color: white;
 }
